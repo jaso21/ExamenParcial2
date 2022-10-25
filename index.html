@@ -18,22 +18,22 @@
             <nav class="menu">
                 <a href="#">Inicio</a>
                 <a href="#">Sobre Nosotros</a>
-                <a href="#">Galeria</a>
+                <a href="#">Categorias</a>
                 <a href="#">Contacto</a>
             </nav>
         </header>
         <section class="banner">
             <div class="container-img">
-                <img class="imagen" src="Resources/img/chica.webp" alt="paisaje">
+                <img class="banner-imagen" src="Resources/img/chica.webp" alt="paisaje">
             </div>
             <div class="container-link">
                 <div class="link-1">
                     <img src="Resources/img/facebook.svg" alt="">
-                    <a href="#">Visítanos en el facebook</a>
+                    <a href="https://www.facebook.com/ictivatugimnasioencasa/" target="_blank">Visítanos en el facebook</a>
                 </div>
                 <div class="link-2">
                     <img src="Resources/img/twitter.svg" alt="">
-                    <a href="#">Puedes seguirnos en twitter</a>
+                    <a href="https://twitter.com/ejercicioNcasa" target="_blank">Puedes seguirnos en twitter</a>
                 </div>
             </div>
         </section>
@@ -44,7 +44,7 @@
                         <h3 class="title">Iniciar Sesion</h3>
                         <div class="inputContainer">
                             <input type="text" class="box" id="usuario" placeholder="Ingrese Nombre de Usuario">
-                            <input type="button" class="submitbtn" value="Ingresar" name="boton" onclick="sub()">
+                            <button type="button" class="btn" onclick="sub()">Ingresar</button>
                         </div>
                     </form>
                     <div class="container-welcome">
@@ -53,7 +53,8 @@
                         </div>
 
                         <div class="box-container">
-                            <h4>Bienvenido(a): <h3 id="usu"></h3>
+                            <h4>Bienvenido(a): 
+                                <p id="usu"></p>
                             </h4>
                         </div>
 
@@ -67,11 +68,34 @@
                         y empieza con lentitud, y luego trabaja de manera gradual hasta llegar a rutinas de ejercicios
                         más largas o intensas.
                     </p>
-                    <div class="form-converter">
-                        <h3>Conversor Dolar a Bs / Bs a Dolar</h3>
-                        <input type="text" class="box" placeholder="Bs">
-                        <input type="text" class="box" placeholder="$">
-                        <input type="submit" class="submitbtn" value="Convertir">
+                    <!-- <div class="form-converter">
+                        <h3 class="title">Conversor Bs a Dolar</h3>
+                        <input type="text" id="bs" class="box" placeholder="Bs">
+                        <input type="text" id="resul" class="box" placeholder="$us">
+                        <button type="button" class="btn" onclick="cambio()">Convertir</button>
+                    </div> -->
+                    <div class="convertidor">
+                        <hi >convertidor</hi>
+                        <div class="fila">
+                            <span>covetir de</span>
+                                <select name="unidades" id="unidad1">
+                
+                                    <option value="Bs">Bs</option>
+                                    <option value="dolar">dolar</option>
+                                    
+                                </select>
+                                <span>a</span>
+                                <select name="unidades" id="unidad2">
+                
+                                    <option value="Bs">Bs</option>
+                                    <option value="dolar">dolar</option>
+                                    
+                                </select>
+                        </div>
+                        <input type="number" id="valor" placeholder="valor">
+                        <div class="resutado" id="resutado">
+                            --
+                        </div>
                     </div>
                 </div>
                 <div class="container-texto">
