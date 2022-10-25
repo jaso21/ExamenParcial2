@@ -13,7 +13,7 @@ body {
     background-color: #EDEDED;
 }
 h3 {
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     color: #002E94;
     font-size: 1.25rem;
     font-weight: 700;
@@ -22,14 +22,16 @@ h3 {
 a {
     text-decoration: none;
 }
+
 .box {
     padding: 5px;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
 }
-.submitbtn {
+
+.btn {
     width: 100px;
     padding: 5px;   
-    margin-top: 20px; 
+    margin: 20px 0 0 20px;
     border-radius: 3px;
     border: none;
     background-color: #AF0171;
@@ -64,7 +66,7 @@ header a:hover {
 .container-img {
     width: 70%;
 }
-.imagen {
+.banner-imagen {
     width: 100%;
     height: 300px;
 }
@@ -101,15 +103,9 @@ header a:hover {
     padding: 20px;
     text-align: justify;
 }
-/*.paragraph::first-letter {
-    font-size: 300%;
-    font-weight: bold;
-    
-}*/
-
 .container-session {
-    /* padding: 20px; */
     display: flex;
+    padding: 20px;
 }
 .container-session .form-session {
     width: 50%;
@@ -117,14 +113,12 @@ header a:hover {
 }
 .container-session .form-session .inputContainer{
     width: 80%;
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .container-welcome {
     background-color:#EDEDED;
-    /* padding: 20px; */
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -144,8 +138,9 @@ header a:hover {
     margin: 20px 0;
     justify-content: center;
 }
-.container-welcome .box-container h4{
-    padding-right: 20px;
+.container-welcome .box-container p {
+    display: inline-block;
+    padding-left: 20px;
 }
 .container-converter{
     display: flex;
@@ -156,7 +151,6 @@ header a:hover {
 }
 .container-converter .form-converter {
     width: 40%;
-    padding: 20px;
 }
 .main aside {
     width: 30%;
@@ -175,3 +169,39 @@ footer {
     background: #AF0171;
     padding: 20px;
 }
+/*---------convertidor-----------*/
+.convertidor{
+
+    max-width: 450px;
+    height: 250px;
+    /* margin: auto; */
+    background-color: #ddd;
+    border: 1px solid #000;
+        padding: 10px;
+        text-align: center;
+        font-size:  1rem;
+    }
+    .fila{
+    
+        margin: 15px 0;
+    }
+    select{
+        font-size: 1rem;
+        border: none;
+        padding: 5px;
+        border-radius: 30px;
+    }
+    .resutado{
+    width: 100%;
+    margin: 10px 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 1rem;
+    }
+    input{
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    
+    }
